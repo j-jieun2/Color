@@ -13,7 +13,7 @@ public class Commands implements CommandExecutor { // 명령어 처리 클래스
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) { //명령어 실행시
-        if (sender instanceof Player)  { // 명령어가 사용자인 경우
+        if (sender instanceof Player) { // 명령어가 사용자인 경우
             Player player = (Player) sender; // 명령어 사용자 객체를 플레이러 객체로 변환
             player.sendMessage("컬러의 테스트 명령어 실행"); // 사용자에게 메시지 발신
 
@@ -29,8 +29,8 @@ public class Commands implements CommandExecutor { // 명령어 처리 클래스
             return true; // true 값을 반환하면 명령어 성공
         } else if (sender instanceof ConsoleCommandSender) { // 명령어 사용자가 콘솔인 경우 {
             sender.sendMessage("콘솔에서는 이 명령어를 사용할 수 없습니다.");
+            return false;
+        }
         return false;
     }
-    return false;
-}
 }

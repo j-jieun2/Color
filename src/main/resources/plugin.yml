@@ -6,4 +6,4 @@ commands:
   test:
     description: 컬러 서버 테스트 명령어입니다.
     usage: /test, /ㅋㄹ, /컬러 중 하나를 치면 작동합니다.
-    aliases: [ㅋㄹ, 컬러]
+    aliases: [ ㅋㄹ, 컬러 ]
